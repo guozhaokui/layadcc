@@ -6,6 +6,9 @@
   "scripts": {
     "test": "test.js"
   },
+  "bin":{
+    "layadcc":"./bin/exe.js"  
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/guozhaokui/layadcc.git"

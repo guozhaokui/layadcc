@@ -1,13 +1,13 @@
 {
   "name": "layadcc",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": " Generate dcc files for laya application.",
   "main": "main.js",
   "scripts": {
     "test": "test.js"
   },
-  "bin":{
-    "layadcc":"./bin/exe.js"  
+  "bin": {
+    "layadcc": "./bin/exe.js"
   },
   "repository": {
     "type": "git",

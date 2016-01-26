@@ -1,0 +1,24 @@
+{
+  "name": "layadcc",
+  "version": "1.0.1",
+  "description": " Generate dcc files for laya application.",
+  "main": "main.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guozhaokui/layadcc.git"
+  },
+  "keywords": [
+    "dcc",
+    "laya",
+    "verify"
+  ],
+  "author": "guo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guozhaokui/layadcc/issues"
+  },
+  "homepage": "https://github.com/guozhaokui/layadcc#readme"
+}

@@ -17,5 +17,5 @@ if (!fs.existsSync(outpath)) {
     console.log('update 目录不存在，创建一个.');
     fs.mkdirSync(outpath);
 }
-var gendcc = require('./lib/genDcc');
+var gendcc = require('../lib/genDcc');
 gendcc.gendcc(srcpath, outpath, genCache, urlToLower);

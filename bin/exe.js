@@ -5,7 +5,7 @@ if (process.argv.length < 3) {
     console.log('用法：node genDcc.js 输入目录，[写缓存么] [转小写么].');
     throw -1;
 }
-var srcpath = path.resolve(__dirname, process.argv[2]);
+var srcpath = path.resolve(process.cwd(), process.argv[2]);
 if (!fs.existsSync(srcpath)) {
     var desc = 'directory [' + srcpath + ']not exist, the first parameter should be a valid path.';
     throw desc;

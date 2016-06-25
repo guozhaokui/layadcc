@@ -1,4 +1,4 @@
-var fs = require('fs');
+/*var fs = require('fs');
 var path = require('path');
 if (process.argv.length < 3) {
     console.log('用法：node genDcc.js 输入目录，[写缓存么] [转小写么].');
@@ -18,3 +18,5 @@ if (!fs.existsSync(outpath)) {
 }
 var gendcc = require('./lib/genDcc');
 gendcc.gendcc(srcpath, outpath, genCache, urlToLower);
+*/
+exports.gendcc = require('./lib/genDcc').gendcc;

@@ -1,6 +1,6 @@
 {
   "name": "layadcc",
-  "version": "1.3.0",
+  "version": "1.5.1",
   "description": " Generate dcc files for laya application.",
   "bin": {
     "layadcc": "./bin/exe.js"
@@ -18,10 +18,39 @@
     "laya",
     "verify"
   ],
-  "author": "guo",
+  "author": {
+    "name": "guo"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/guozhaokui/layadcc/issues"
   },
-  "homepage": "https://github.com/guozhaokui/layadcc#readme"
+  "homepage": "https://github.com/guozhaokui/layadcc#readme",
+  "gitHead": "d851dbf0ceea4f700a1251a4b6e0912d65cf6b54",
+  "_id": "layadcc@1.5.1",
+  "_shasum": "508dfe5506996aeae1639ea1b9e83f2d9279643a",
+  "_from": "layadcc@latest",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.0",
+  "_npmUser": {
+    "name": "guozhaokui",
+    "email": "guozhaokuiwang@gmail.com"
+  },
+  "dist": {
+    "shasum": "508dfe5506996aeae1639ea1b9e83f2d9279643a",
+    "tarball": "https://registry.npmjs.org/layadcc/-/layadcc-1.5.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "guozhaokui",
+      "email": "guozhaokuiwang@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-13-west.internal.npmjs.com",
+    "tmp": "tmp/layadcc-1.5.1.tgz_1458805488028_0.34283402911387384"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/layadcc/-/layadcc-1.5.1.tgz",
+  "readme": "ERROR: No README data found!"
 }

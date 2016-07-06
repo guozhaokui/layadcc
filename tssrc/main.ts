@@ -1,6 +1,10 @@
 ///<reference path="e:/tsdefination/node/node.d.ts" />
 ///<reference path="lib/genDcc.d.ts" />
 
+/**
+ * 这个文件不再维护。反正比较简单，直接写js了。
+ */
+
 import * as fs from 'fs';
 import * as path from 'path';
 

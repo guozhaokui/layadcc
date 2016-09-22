@@ -63,4 +63,4 @@ if (!fs.existsSync(outpath)) {
 var gendcc = require('../lib/genDcc');
 gendcc.gendcc (srcpath, outpath, options.cache, options.lwr, options.url); 
 if(relout)
-    console.log('注意:\n当前输出路径在资源目录下，记得下次生成cache的时候删除这个输出目录('+outpath+')，否则也会被算作资源处理的。')
+    console.log('注意:\n当前输出路径在资源目录下，记得下次生成cache的时候删除这个输出目录('+outpath+')，否则也会被算作资源处理的。 ')

@@ -3,7 +3,7 @@ var fs = require('fs');
 var path = require('path');
 if (process.argv.length < 3) {
     console.log('用法：');
-    console.log('   layadcc 输入目录，[options]');
+    console.log('   layadcc 输入目录 [options]');
     console.log('   options:');
     console.log('       -cache 生成cache.');
     console.log('       -lwr 文件路径全部转为小写。');

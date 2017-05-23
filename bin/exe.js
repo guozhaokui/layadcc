@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 var fs = require('fs');
 var path = require('path');
-if (process.argv.length < 3) {
+function help(){
     console.log('用法：');
     console.log('   layadcc 输入目录 [options]');
     console.log('   options:');
@@ -11,6 +11,10 @@ if (process.argv.length < 3) {
     console.log('       -cout outpath cache的输出目录，如果不设置的话，就是在资源目录下。');
     console.log('例如:');
     console.log('   layadcc d:/game/wow -cache -url www.game.com');
+}
+
+if (process.argv.length < 3) {
+    help();
     process.exit(1);
 }
 
@@ -29,6 +33,13 @@ process.argv.forEach((v,i,arr)=>{
             break;
         case '-cout':
             options.cout=arr[i+1];
+            break;
+        default:
+            console.error( '错误：不认识的参数 '+v);
+            console.log(`
+            `);
+            help();
+            process.exit(1);
         }
     }
 });

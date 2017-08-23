@@ -1,6 +1,6 @@
 {
   "name": "layadcc",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": " Generate dcc files for laya application.",
   "bin": {
     "layadcc": "./bin/exe.js"

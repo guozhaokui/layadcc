@@ -8,6 +8,7 @@ function help(){
     console.log('       -cache 生成cache.');
     console.log('       -lwr 文件路径全部转为小写。');
     console.log('       -url url 生成cache的话，对应的url.');
+    console.log('       -esc 把空格转换成%20 ');
     console.log('       -cout outpath cache的输出目录，如果不设置的话，就是在资源目录下。');
     console.log('例如:');
     console.log('   layadcc d:/game/wow -cache -url www.game.com');
@@ -18,7 +19,7 @@ if (process.argv.length < 3) {
     process.exit(1);
 }
 
-var options={lwr:false,cache:false,url:null};
+var options={lwr:false,cache:false,url:null,escspace:false};
 process.argv.forEach((v,i,arr)=>{
     if(v.charAt(0)==='-'){
         switch(v){
@@ -33,6 +34,9 @@ process.argv.forEach((v,i,arr)=>{
             break;
         case '-cout':
             options.cout=arr[i+1];
+            break;
+        case '-esc':
+            options.escspace=true;
             break;
         default:
             console.error( '错误：不认识的参数 '+v);
@@ -72,6 +76,6 @@ if (!fs.existsSync(outpath)) {
 }
 
 var gendcc = require('../lib/genDcc');
-gendcc.gendcc (srcpath, outpath, options.cache, options.lwr, options.url); 
+gendcc.gendcc (srcpath, outpath, options.cache, options.lwr, options.url,options); 
 if(relout)
     console.log('注意:\n当前输出路径在资源目录下，记得下次生成cache的时候删除这个输出目录('+outpath+')，否则也会被算作资源处理的。 ')
